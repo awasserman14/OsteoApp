@@ -29,45 +29,51 @@ class Update_ResponsesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(questionNumber)
+        //print(questionNumber)
         
         //these cases need to be done for all 8 questions
+        numQuestionLabel.text = "Question " + questionNumber!
+        question1Label.text = full_questions![Int(questionNumber!)!]
+        sliderValue.value = Float(answers![Int(questionNumber!)!])/Float(10.0)
+        //sliderValue.setValue(((Float(answers![Int(questionNumber!)!)]/Float(10.0))), animated: true)
+        valueLabel.text = String(answers![Int(questionNumber!)!])
+
         
-        if (questionNumber! == "1") {
-            numQuestionLabel.text = "Question 1"
-            
-            question1Label.text = question1[0]
-            question2Label.text = question1[1]
-            question3Label.text = question1[2]
-            
-            valueLabel.text = String(answers![1])
-            
-            sliderValue.setValue((Float(answers![1])/10), animated: true)
-            
-        } else if (questionNumber! == "2") {
-            numQuestionLabel.text = "Question 2"
-            
-            question1Label.text = question2[0]
-            question2Label.text = question2[1]
-            question3Label.text = question2[2]
-            
-            valueLabel.text = String(answers![2])
-            
-            sliderValue.setValue((Float(answers![2])/10), animated: true)
-            
-            
-        } else if (questionNumber! == "3") {
-            numQuestionLabel.text = "Question 3"
-            
-            question1Label.text = question3[0]
-            question2Label.text = question3[1]
-            question3Label.text = question3[2]
-            
-            valueLabel.text = String(answers![3])
-            
-            sliderValue.setValue((Float(answers![3])/10), animated: true)
-            
-        }
+//        if (questionNumber! == "1") {
+//            numQuestionLabel.text = "Question 1"
+//
+//            question1Label.text = question1[0]
+//            question2Label.text = question1[1]
+//            question3Label.text = question1[2]
+//
+//            valueLabel.text = String(answers![1])
+//
+//            sliderValue.setValue((Float(answers![1])/10), animated: true)
+//
+//        } else if (questionNumber! == "2") {
+//            numQuestionLabel.text = "Question 2"
+//
+//            question1Label.text = question2[0]
+//            question2Label.text = question2[1]
+//            question3Label.text = question2[2]
+//
+//            valueLabel.text = String(answers![2])
+//
+//            sliderValue.setValue((Float(answers![2])/10), animated: true)
+//
+//
+//        } else if (questionNumber! == "3") {
+//            numQuestionLabel.text = "Question 3"
+//
+//            question1Label.text = question3[0]
+//            question2Label.text = question3[1]
+//            question3Label.text = question3[2]
+//
+//            valueLabel.text = String(answers![3])
+//
+//            sliderValue.setValue((Float(answers![3])/10), animated: true)
+//
+//        }
 
     }
 
@@ -97,14 +103,15 @@ class Update_ResponsesViewController: UIViewController {
         let intValue: Int = Int(temp)
         
         valueLabel.text = String(intValue)
+        answers![Int(questionNumber!)!] = intValue
         
-        if (questionNumber! == "1") {
-            answers![1] = intValue
-        } else if (questionNumber! == "2") {
-            answers![2] = intValue
-        } else if (questionNumber! == "3") {
-            answers![3] = intValue
-        }
+//        if (questionNumber! == "1") {
+//            answers![1] = intValue
+//        } else if (questionNumber! == "2") {
+//            answers![2] = intValue
+//        } else if (questionNumber! == "3") {
+//            answers![3] = intValue
+//        }
         
     }
     
@@ -114,6 +121,10 @@ class Update_ResponsesViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var bacToReview: UIButton!
+    @IBAction func backToReview(_ sender: Any) {
+        self.performSegue(withIdentifier: "goBack", sender: self)
+    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -130,6 +141,12 @@ class Update_ResponsesViewController: UIViewController {
                 destination.thirdAnswer = thirdAnswer
             }
             
+        }
+        if (segue.identifier == "goBack") {
+            if let destination = segue.destination as? Review_ResponsesViewController {
+                destination.answers = self.answers
+                destination.full_questions = self.full_questions
+            }
         }
     }
 

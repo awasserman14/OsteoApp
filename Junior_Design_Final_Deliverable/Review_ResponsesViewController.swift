@@ -20,7 +20,7 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
     var full_questions: [String]?
     
     //array containing keywords for each question
-    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects importance: ", "8. Other Negative Factors: "]
+    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects: ", "8. Other Negative Factors: "]
     
     //array of the inputted answers by the user
     var answers : [Int]?
@@ -61,7 +61,12 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         self.performSegue(withIdentifier: "goUpdateResponse", sender: self) 
                 
     }
-
+    
+    @IBAction func backToQuestions(_ sender: Any) {
+        //submitPressed(self)
+        performSegue(withIdentifier: "backToLastQuestion", sender: self)
+    }
+    
     @IBAction func submitPressed(_ sender: Any) {
         
         let currentDateTime = Date()
@@ -87,6 +92,12 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         record.setValue(String(answers![1]), forKeyPath: "firstQuestion")
         record.setValue(String(answers![2]), forKeyPath: "secondQuestion")
         record.setValue(String(answers![3]), forKeyPath: "thirdQuestion")
+        record.setValue(String(answers![4]), forKeyPath: "fourthQuestion")
+        record.setValue(String(answers![5]), forKeyPath: "fifthQuestion")
+        record.setValue(String(answers![6]), forKeyPath: "sixthQuestion")
+        record.setValue(String(answers![7]), forKeyPath: "seventhQuestion")
+        record.setValue(String(answers![8]), forKeyPath: "eighthQuestion")
+
         record.setValue(dateTime, forKeyPath: "dateTime")
         
         do {
@@ -106,6 +117,9 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
         if (segue.identifier == "goUpdateResponse") {
             
             if let destination = segue.destination as? Update_ResponsesViewController {
+                
+                //problem passing back from here; a lot of things are nil so I need to update
+                
                 //pass full questions?
                 destination.full_questions = self.full_questions
                 destination.questions = self.questions
@@ -117,6 +131,17 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
                 destination.thirdAnswer = thirdAnswer
             }
             
+        }
+        
+        if (segue.identifier == "backToLastQuestion") {
+            if let destination = segue.destination as? First_SurveyViewController {
+                destination.answers = self.answers!
+                destination.questions = self.full_questions!
+                destination.question_number = 8
+                //destination.sliderValue.value = Float(answers![8])/Float(10.0)
+                //destination.valueLabel.text = String(answers![8])
+                //destination.progressLabel.text = "8/8"
+            }
         }
     }
 
