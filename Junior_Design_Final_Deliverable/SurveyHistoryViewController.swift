@@ -75,7 +75,7 @@ class SurveyHistoryViewController: UIViewController, UITableViewDelegate, UITabl
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        //questionSelected = String(indexPath.row + 1)
+
         currentRecord = records[indexPath.row]
         firstAnswer = currentRecord?.value(forKeyPath: "firstQuestion") as! String?
         secondAnswer = currentRecord?.value(forKeyPath: "secondQuestion") as! String?
