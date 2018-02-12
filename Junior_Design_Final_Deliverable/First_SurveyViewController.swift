@@ -71,9 +71,14 @@ class First_SurveyViewController: UIViewController {
     
     @IBAction func sliderValueChanged(_ sender: Any) {
         
+        //valueLabel.text = sliderValue.value
+        
         let temp = sliderValue.value * 10
+        
         let intValue: Int = Int(temp)
+        
         stringValue = String(intValue)
+        
         valueLabel.text = String(intValue)
         
     }
@@ -81,10 +86,21 @@ class First_SurveyViewController: UIViewController {
     
     func updateQuestion(q_num:Int, direction:Int) {
         /*
-         *  This function updates the questions when moving forward and back
+         *  This function updates the questions only when moving forward
          *  Direction is a bool flag: 0 go back, 1 go next
          */
         
+        //run 2 arrays indexed from 1
+        //one that holds all strings to pull from
+        //one that I store the values in
+        //also update status to be i/3
+        
+        //there needs to be a special case for q_num = 4
+        //in that case I would have to modify the input method
+        //there would be 3 text blanks, each having a slider of its own
+        //Then I will have to switch back to the previous screen
+        
+        //****Also do the above for q_num = 8
         
         //passed from continuePressed
         if (direction == 1) {
@@ -115,6 +131,9 @@ class First_SurveyViewController: UIViewController {
     @IBAction func continuePressed(_ sender: Any) {
         
         //the function handles when the first question is completed and the user clicks continue
+        //modify this to just swap text rather than swapping UIs entirely
+        
+        //answers.append(sliderValue.value*10)
         
         //shown all questions so segue
         question_number!+=1
@@ -129,7 +148,7 @@ class First_SurveyViewController: UIViewController {
     
     @IBAction func backQuestion(_ sender: Any) {
         /*
-         *  This function updates questions when moving backwards (back is clicked)
+         *  This function updates questions when moving backwards
          *
          *
          */
@@ -137,6 +156,18 @@ class First_SurveyViewController: UIViewController {
         answers[question_number!] = Int(sliderValue.value*10)
         updateQuestion(q_num: question_number!, direction: 0)
         
+//        if i! != 1 {
+//            i!-=1
+//            answers[i!+1] = Int(sliderValue.value*10)
+//            questionLabel.text = questions[i!]
+//            progressLabel.text = String(i!) + "/8"
+//            progressBar.progress = Float(i!)/Float(8.0)
+//            valueLabel.text = String(answers[i!])
+//            sliderValue.value = Float(answers[i!])/Float(10.0)
+//        }
+//        else {
+//
+//        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
