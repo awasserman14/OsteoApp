@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */; };
 		E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */; };
 		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
 		E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPageViewController.swift; sourceTree = "<group>"; };
 		E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update_ResponsesViewController.swift; sourceTree = "<group>"; };
 		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHistoryViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */,
 				E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */,
 				E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */,
+				D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */,
 				E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */,
 				E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */,
 				E5ED863A1FC313FD00D8A612 /* Assets.xcassets */,
@@ -118,6 +121,7 @@
 					E5ED862C1FC313FD00D8A612 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = GVPVWW4BGY;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -162,6 +166,7 @@
 				E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */,
 				E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */,
 				E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */,
+				D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */,
 				E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */,
 				E5ED864E1FC344C300D8A612 /* Review_ResponsesViewController.swift in Sources */,
 				E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */,
