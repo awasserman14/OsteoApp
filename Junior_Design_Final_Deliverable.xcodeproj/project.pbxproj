@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D91AAD0A2032617F0074A9DD /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D91AAD092032617F0074A9DD /* libsqlite3.tbd */; };
+		D91AAD0C20326BED0074A9DD /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAD0B20326BED0074A9DD /* MainScreenViewController.swift */; };
+		D91AAD0E203271AB0074A9DD /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */; };
 		D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */; };
 		E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */; };
 		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D91AAD092032617F0074A9DD /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		D91AAD0B20326BED0074A9DD /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPageViewController.swift; sourceTree = "<group>"; };
 		E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update_ResponsesViewController.swift; sourceTree = "<group>"; };
 		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -45,17 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91AAD0A2032617F0074A9DD /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D91AAD082032617F0074A9DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D91AAD092032617F0074A9DD /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5ED86241FC313FD00D8A612 = {
 			isa = PBXGroup;
 			children = (
 				E5ED862F1FC313FD00D8A612 /* Junior_Design_Final_Deliverable */,
 				E5ED862E1FC313FD00D8A612 /* Products */,
+				D91AAD082032617F0074A9DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +94,8 @@
 				E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */,
 				E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */,
 				D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */,
+				D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */,
+				D91AAD0B20326BED0074A9DD /* MainScreenViewController.swift */,
 				E5ED86471FC326B400D8A612 /* First_SurveyViewController.swift */,
 				E5ED86451FC3188E00D8A612 /* FirstLandingPageViewController.swift */,
 				E5ED863A1FC313FD00D8A612 /* Assets.xcassets */,
@@ -162,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91AAD0E203271AB0074A9DD /* CreateAccountViewController.swift in Sources */,
 				E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */,
 				E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */,
 				E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */,
@@ -170,6 +189,7 @@
 				E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */,
 				E5ED864E1FC344C300D8A612 /* Review_ResponsesViewController.swift in Sources */,
 				E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */,
+				D91AAD0C20326BED0074A9DD /* MainScreenViewController.swift in Sources */,
 				E5ED86481FC326B400D8A612 /* First_SurveyViewController.swift in Sources */,
 				E5ED86311FC313FD00D8A612 /* AppDelegate.swift in Sources */,
 			);

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account_Info" representedClassName="Account_Info" syncable="YES" codeGenerationType="class">
+        <attribute name="age" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <entity name="Survey_Record" representedClassName="Survey_Record" syncable="YES" codeGenerationType="class">
         <attribute name="dateTime" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="eighthQuestion" optional="YES" attributeType="String" syncable="YES"/>
@@ -13,5 +19,6 @@
     </entity>
     <elements>
         <element name="Survey_Record" positionX="-63" positionY="-18" width="128" height="180"/>
+        <element name="Account_Info" positionX="-63" positionY="54" width="128" height="105"/>
     </elements>
 </model>
