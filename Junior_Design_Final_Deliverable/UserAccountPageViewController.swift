@@ -34,21 +34,11 @@ class UserAccountPageViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
-//        let myDelegate = UIApplication.shared.delegate as? AppDelegate
-//
-//        let managedContext = myDelegate!.persistentContainer.viewContext
-//
-//        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "UserAccount")
-//
-//        do {
-//            records = try managedContext.fetch(fetchRequest)
-//            print(records)
-//        } catch let error as NSError {
-//            print("could not fetch")
-//        }
-//        nameField!.text=(records[0].value(forKey: "name") as! String)
-//        emailField!.text=(records[0].value(forKey: "email") as! String)
-//        ageField!.text=((records[0].value(forKey: "age")) as! String)
+        /*
+         *This section is loading the users account information from the coredata
+         *in order to display it in the textFields
+         *
+         **/
         
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
@@ -84,6 +74,13 @@ class UserAccountPageViewController: UIViewController {
         * after storage, segue back to the main menu
         */
         
+        /*
+         * This section stores changes made to account info into the coredata table
+         *
+         *
+         *
+         */
+        
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
         let managedContext = appDelegate?.persistentContainer.viewContext
@@ -91,9 +88,6 @@ class UserAccountPageViewController: UIViewController {
         let entity = NSEntityDescription.entity(forEntityName: "Account_Info", in: managedContext!)!
         
         let record = NSManagedObject(entity: entity, insertInto: managedContext)
-        
-        
-        
         
         records[0].setValue(String(describing: nameField.text!), forKeyPath: "name")
         records[0].setValue(String(describing: ageField.text!), forKeyPath: "age")
@@ -106,37 +100,6 @@ class UserAccountPageViewController: UIViewController {
             print("Could not save. \(error), \(error.userInfo)")
         }
         
-        
-//        let currentDateTime = Date()
-//        let formatter = DateFormatter()
-//        formatter.timeStyle = .short
-//        formatter.dateStyle = .short
-//        
-//        let dateTime = formatter.string(from: currentDateTime)
-//        
-//        print(dateTime)
-//        
-//        // this is where we want to save to Core Data
-//        
-//        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-//        
-//        let managedContext = appDelegate?.persistentContainer.viewContext
-//        
-//        let entity = NSEntityDescription.entity(forEntityName: "UserAccount", in: managedContext!)!
-//        
-//        let record = NSManagedObject(entity: entity, insertInto: managedContext)
-//        
-//        record.setValue(nameField!.text, forKeyPath: "name")
-//        record.setValue(emailField!.text, forKey: "email")
-//        record.setValue(ageField!.text, forKey: "age")
-//        
-//        record.setValue(dateTime, forKeyPath: "dateTime")
-//        
-//        do {
-//            try managedContext?.save()
-//        } catch let error as NSError {
-//            print("Could not save. \(error), \(error.userInfo)")
-//        }
         self.performSegue(withIdentifier: "submitClicked", sender: self)
         
     }

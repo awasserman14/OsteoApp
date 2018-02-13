@@ -136,7 +136,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="137.18140929535232"/>
+            <point key="canvasLocation" x="-1346" y="-200"/>
         </scene>
         <!--Create Account View Controller-->
         <scene sceneID="bLN-wU-L3U">
@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l0l-a6-PAu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1346.4000000000001" y="1180.6596701649175"/>
+            <point key="canvasLocation" x="-1346" y="2111"/>
         </scene>
         <!--Main Screen View Controller-->
         <scene sceneID="Sh4-a5-ZPN">
@@ -630,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RoO-6G-cVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-90.400000000000006" y="1870.6146926536733"/>
+            <point key="canvasLocation" x="-79" y="2111"/>
         </scene>
         <!--Survey History View Controller-->
         <scene sceneID="6jP-zJ-gWc">
@@ -719,7 +719,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YN0-lp-QGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864.79999999999995" y="1546.776611694153"/>
+            <point key="canvasLocation" x="2106" y="2111"/>
         </scene>
         <!--View Survey Record View Controller-->
         <scene sceneID="QlY-Hh-jUj">
@@ -834,7 +834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PaS-cd-BAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1767.2" y="1688.9055472263869"/>
+            <point key="canvasLocation" x="3244" y="2111"/>
         </scene>
         <!--First Survey View Controller-->
         <scene sceneID="yIR-Fi-cZ2">
@@ -1005,7 +1005,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eio-pt-v3c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="18"/>
+            <point key="canvasLocation" x="-90" y="-200"/>
         </scene>
         <!--Review Responses View Controller-->
         <scene sceneID="Bh1-zy-BWE">
@@ -1141,7 +1141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZHU-nk-8pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2998" y="-242"/>
+            <point key="canvasLocation" x="2998" y="-239"/>
         </scene>
         <!--Update Responses View Controller-->
         <scene sceneID="UMg-aC-8NH">
@@ -1252,7 +1252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vL-GZ-at7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2997.5999999999999" y="904.49775112443785"/>
+            <point key="canvasLocation" x="4047" y="904"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="kTD-8a-Lkp">
@@ -1391,7 +1391,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zOm-Np-DtH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2078" y="957"/>
+            <point key="canvasLocation" x="2550" y="904"/>
         </scene>
     </scenes>
     <resources>
@@ -1405,9 +1405,10 @@
         <image name="white_clock" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="n7u-Cp-oPd"/>
         <segue reference="pQU-vw-cIg"/>
-        <segue reference="VLZ-5d-YfZ"/>
-        <segue reference="9Ia-Xs-AUD"/>
-        <segue reference="eMO-vt-stq"/>
+        <segue reference="4YR-mx-QJf"/>
+        <segue reference="1U8-Dq-XhG"/>
+        <segue reference="w75-1g-2YF"/>
     </inferredMetricsTieBreakers>
 </document>

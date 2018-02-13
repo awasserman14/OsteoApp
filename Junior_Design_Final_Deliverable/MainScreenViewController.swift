@@ -13,11 +13,9 @@ class MainScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-
-        
     }
+    
     //we need a better method of tracking this
     //right now, if they opt out of making an account this will keep appearing
     var name :String?=nil
@@ -31,8 +29,13 @@ class MainScreenViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        //This needs an if clause
-        //Only run this if the user does not have an account!
+        /*
+         * Here I load the record and if there is user data stored do not display the alert
+         * for making an account.
+         * However, if there is no record display the alert EVERY time this page loads.
+         * This worries me.
+         *
+         */
         
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
@@ -70,15 +73,5 @@ class MainScreenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 }
