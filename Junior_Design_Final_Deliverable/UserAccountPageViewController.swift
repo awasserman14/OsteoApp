@@ -15,6 +15,7 @@ class UserAccountPageViewController: UIViewController {
     
     var currentRecord: NSManagedObject?
     
+    @IBOutlet weak var genderField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var ageField: UITextField!
     @IBOutlet weak var nameField: UITextField!
@@ -48,6 +49,24 @@ class UserAccountPageViewController: UIViewController {
 //        nameField!.text=(records[0].value(forKey: "name") as! String)
 //        emailField!.text=(records[0].value(forKey: "email") as! String)
 //        ageField!.text=((records[0].value(forKey: "age")) as! String)
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let managedContext = appDelegate!.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Account_Info")
+        
+        do {
+            records = try managedContext.fetch(fetchRequest)
+            print(records)
+        } catch let error as NSError {
+            print("could not fetch")
+        }
+        nameField.text! = ((records[0].value(forKeyPath: "name")! as! String) as! String)
+        nameField!.text! = nameField!.text!
+        genderField.text = (records[0].value(forKeyPath: "gender") as! String)
+        emailField.text! = (records[0].value(forKeyPath: "email")! as! String) as! String
+        ageField.text! = (records[0].value(forKeyPath: "age")! as! String) as! String
     }
     
 
@@ -64,6 +83,29 @@ class UserAccountPageViewController: UIViewController {
         * this is the function for the submit clicked button.
         * after storage, segue back to the main menu
         */
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let managedContext = appDelegate?.persistentContainer.viewContext
+        
+        let entity = NSEntityDescription.entity(forEntityName: "Account_Info", in: managedContext!)!
+        
+        let record = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        
+        
+        
+        records[0].setValue(String(describing: nameField.text!), forKeyPath: "name")
+        records[0].setValue(String(describing: ageField.text!), forKeyPath: "age")
+        records[0].setValue(String(describing: emailField.text!), forKeyPath: "email")
+        records[0].setValue(String(describing: genderField.text!), forKeyPath: "gender")
+        
+        do {
+            try managedContext?.save()
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+        
         
 //        let currentDateTime = Date()
 //        let formatter = DateFormatter()
