@@ -24,11 +24,11 @@ class FirstLandingPageViewController: UIViewController {
         
         let managedContext = appDelegate?.persistentContainer.viewContext
         
-        let entity = NSEntityDescription.entity(forEntityName: "Account_Info", in: managedContext!)!
+        //let entity = NSEntityDescription.entity(forEntityName: "Account_Info", in: managedContext!)!
         
-        let record = NSManagedObject(entity: entity, insertInto: managedContext)
+        //let record = NSManagedObject(entity: entity, insertInto: managedContext)
         
-        
+        //^^ this was causing crash in main menu by inserting a blank Account_Info object into Core Data
         
         
 //        records[0].setValue(nil, forKeyPath: "name")
@@ -36,11 +36,11 @@ class FirstLandingPageViewController: UIViewController {
 //        records[0].setValue(nil, forKeyPath: "email")
 //        records[0].setValue(nil, forKeyPath: "gender")
         
-        do {
-            try managedContext?.save()
-        } catch let error as NSError {
-            print("Could not save. \(error), \(error.userInfo)")
-        }
+//        do {
+//            try managedContext?.save()
+//        } catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
         
     }
 

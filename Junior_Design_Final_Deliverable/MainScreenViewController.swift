@@ -10,10 +10,14 @@ import UIKit
 import CoreData
 
 class MainScreenViewController: UIViewController {
-
+    
+    //var hasDisplayedWarning: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+
+        
     }
     
     //we need a better method of tracking this
@@ -45,28 +49,33 @@ class MainScreenViewController: UIViewController {
         
         do {
             records = try managedContext.fetch(fetchRequest)
-            print(records)
+            //print(records[0])
         } catch let error as NSError {
             print("could not fetch")
         }
         if records.count != 0 {
-            name = records[0].value(forKeyPath: "name") as! String
-            gender = records[0].value(forKeyPath: "gender") as! String
-            email = records[0].value(forKeyPath: "email") as! String
-            age = records[0].value(forKeyPath: "age") as! String
+            print("records.count != 0")
+            //            name = records[0].value(forKeyPath: "name") as! String
+            //            gender = records[0].value(forKeyPath: "gender") as! String
+            //            email = records[0].value(forKeyPath: "email") as! String
+            //            age = records[0].value(forKeyPath: "age") as! String
+        } else {
+            print("records.count =0")
+            
+            if (appDelegate?.hasDisplayedWarning == false) {
+                appDelegate?.hasDisplayedWarning = true
+                let alert = UIAlertController(title: "Create Account", message: "Looks like you haven't made an account yet. Would you like to make an account?", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .`default`, handler: { _ in
+                    NSLog("The \"Cancel\" alert occured.")
+                }))
+                alert.addAction(UIAlertAction(title: NSLocalizedString("Make Account", comment: "Make Account"), style: .`default`, handler: { action in self.performSegue(withIdentifier: "CreateAccount", sender: self)
+                }))
+                self.present(alert, animated: true, completion: nil)
+            }
         }
         
-        if name == nil{
-            let alert = UIAlertController(title: "Create Account", message: "Would you like to make an account?", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: NSLocalizedString("Cancel", comment: "Cancel"), style: .`default`, handler: { _ in
-                NSLog("The \"Cancel\" alert occured.")
-            }))
-            alert.addAction(UIAlertAction(title: NSLocalizedString("Make Account", comment: "Make Account"), style: .`default`, handler: { action in self.performSegue(withIdentifier: "CreateAccount", sender: self)
-            }))
-            self.present(alert, animated: true, completion: nil)
-        }
+        
     }
-    
     
 
     override func didReceiveMemoryWarning() {
