@@ -7,16 +7,45 @@
 //
 
 import UIKit
+import CoreData
 
 class FirstLandingPageViewController: UIViewController {
 
+    var records: [NSManagedObject] = []
+    
+    var currentRecord: NSManagedObject?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         takeSurveyButton.layer.cornerRadius = 100
+        
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let managedContext = appDelegate?.persistentContainer.viewContext
+        
+        //let entity = NSEntityDescription.entity(forEntityName: "Account_Info", in: managedContext!)!
+        
+        //let record = NSManagedObject(entity: entity, insertInto: managedContext)
+        
+        //^^ this was causing crash in main menu by inserting a blank Account_Info object into Core Data
+        
+        
+//        records[0].setValue(nil, forKeyPath: "name")
+//        records[0].setValue(nil, forKeyPath: "age")
+//        records[0].setValue(nil, forKeyPath: "email")
+//        records[0].setValue(nil, forKeyPath: "gender")
+        
+//        do {
+//            try managedContext?.save()
+//        } catch let error as NSError {
+//            print("Could not save. \(error), \(error.userInfo)")
+//        }
+        
+    }
 
         // Do any additional setup after loading the view. This is a standard comment.
-    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
