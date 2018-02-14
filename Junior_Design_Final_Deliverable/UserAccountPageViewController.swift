@@ -52,11 +52,20 @@ class UserAccountPageViewController: UIViewController {
         } catch let error as NSError {
             print("could not fetch")
         }
-        nameField.text! = ((records[0].value(forKeyPath: "name")! as! String) as! String)
-        nameField!.text! = nameField!.text!
-        genderField.text = (records[0].value(forKeyPath: "gender") as! String)
-        emailField.text! = (records[0].value(forKeyPath: "email")! as! String) as! String
-        ageField.text! = (records[0].value(forKeyPath: "age")! as! String) as! String
+        
+        if (records.count != 0) {
+            
+            nameField.text! = ((records[0].value(forKeyPath: "name")! as! String) as! String)
+            nameField!.text! = nameField!.text!
+            genderField.text = (records[0].value(forKeyPath: "gender") as! String)
+            emailField.text! = (records[0].value(forKeyPath: "email")! as! String) as! String
+            ageField.text! = (records[0].value(forKeyPath: "age")! as! String) as! String
+
+            
+        }
+        
+        
+        
     }
     
 
