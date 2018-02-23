@@ -87,6 +87,11 @@ class FirstLandingPageViewController: UIViewController {
         self.performSegue(withIdentifier: "skipSurvey", sender: self)
         
     }
-   
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier=="skipSurvey"){
+            let vc = segue.destination as? MainScreenViewController
+            vc?.skipped = true
+        }
+    }
 }
