@@ -17,7 +17,6 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -39,7 +38,6 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.textLabel!.text = results[indexPath.row]
         
         return cell
-        
     }
 
     
