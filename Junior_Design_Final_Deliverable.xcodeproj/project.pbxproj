@@ -17,6 +17,20 @@
 		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
 		E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */; };
 		E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */; };
+		E5C39AB8206B3A5C000F8FE0 /* Defining Osteoporosis.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AB7206B3A5C000F8FE0 /* Defining Osteoporosis.txt */; };
+		E5C39ABA206B3A63000F8FE0 /* Who Has Osteoporosis?.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AB9206B3A63000F8FE0 /* Who Has Osteoporosis?.txt */; };
+		E5C39ABC206B3A68000F8FE0 /* Bone Basics.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39ABB206B3A68000F8FE0 /* Bone Basics.txt */; };
+		E5C39ABE206B3A6F000F8FE0 /* Causes of Osteoporosis.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39ABD206B3A6F000F8FE0 /* Causes of Osteoporosis.txt */; };
+		E5C39AC0206B3A75000F8FE0 /* Lifestyle.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39ABF206B3A75000F8FE0 /* Lifestyle.txt */; };
+		E5C39AC2206B3A79000F8FE0 /* Risk Factors for Osteoporosis.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AC1206B3A79000F8FE0 /* Risk Factors for Osteoporosis.txt */; };
+		E5C39AC4206B3A81000F8FE0 /* Diagnosing Osteoporosis.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AC3206B3A81000F8FE0 /* Diagnosing Osteoporosis.txt */; };
+		E5C39AC6206B3A87000F8FE0 /* Treating Osteoporosis.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AC5206B3A87000F8FE0 /* Treating Osteoporosis.txt */; };
+		E5C39AC8206B3A8C000F8FE0 /* Nutrition.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AC7206B3A8C000F8FE0 /* Nutrition.txt */; };
+		E5C39ACA206B3A92000F8FE0 /* Exercise.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39AC9206B3A92000F8FE0 /* Exercise.txt */; };
+		E5C39ACC206B3A97000F8FE0 /* Fall Prevention.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39ACB206B3A97000F8FE0 /* Fall Prevention.txt */; };
+		E5C39ACE206B3A9C000F8FE0 /* Medications.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5C39ACD206B3A9C000F8FE0 /* Medications.txt */; };
+		E5CF6031206B223A000B06C0 /* GeneralInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6030206B223A000B06C0 /* GeneralInformationViewController.swift */; };
+		E5CF6033206B2A94000B06C0 /* ReadInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CF6032206B2A94000B06C0 /* ReadInfoViewController.swift */; };
 		E5ED86311FC313FD00D8A612 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86301FC313FD00D8A612 /* AppDelegate.swift */; };
 		E5ED86361FC313FD00D8A612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5ED86341FC313FD00D8A612 /* Main.storyboard */; };
 		E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5ED86371FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld */; };
@@ -38,6 +52,20 @@
 		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHistoryViewController.swift; sourceTree = "<group>"; };
 		E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSurveyRecordViewController.swift; sourceTree = "<group>"; };
+		E5C39AB7206B3A5C000F8FE0 /* Defining Osteoporosis.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Defining Osteoporosis.txt"; sourceTree = "<group>"; };
+		E5C39AB9206B3A63000F8FE0 /* Who Has Osteoporosis?.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Who Has Osteoporosis?.txt"; sourceTree = "<group>"; };
+		E5C39ABB206B3A68000F8FE0 /* Bone Basics.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Bone Basics.txt"; sourceTree = "<group>"; };
+		E5C39ABD206B3A6F000F8FE0 /* Causes of Osteoporosis.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Causes of Osteoporosis.txt"; sourceTree = "<group>"; };
+		E5C39ABF206B3A75000F8FE0 /* Lifestyle.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Lifestyle.txt; sourceTree = "<group>"; };
+		E5C39AC1206B3A79000F8FE0 /* Risk Factors for Osteoporosis.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Risk Factors for Osteoporosis.txt"; sourceTree = "<group>"; };
+		E5C39AC3206B3A81000F8FE0 /* Diagnosing Osteoporosis.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Diagnosing Osteoporosis.txt"; sourceTree = "<group>"; };
+		E5C39AC5206B3A87000F8FE0 /* Treating Osteoporosis.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Treating Osteoporosis.txt"; sourceTree = "<group>"; };
+		E5C39AC7206B3A8C000F8FE0 /* Nutrition.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Nutrition.txt; sourceTree = "<group>"; };
+		E5C39AC9206B3A92000F8FE0 /* Exercise.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Exercise.txt; sourceTree = "<group>"; };
+		E5C39ACB206B3A97000F8FE0 /* Fall Prevention.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Fall Prevention.txt"; sourceTree = "<group>"; };
+		E5C39ACD206B3A9C000F8FE0 /* Medications.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Medications.txt; sourceTree = "<group>"; };
+		E5CF6030206B223A000B06C0 /* GeneralInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralInformationViewController.swift; sourceTree = "<group>"; };
+		E5CF6032206B2A94000B06C0 /* ReadInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadInfoViewController.swift; sourceTree = "<group>"; };
 		E5ED862D1FC313FD00D8A612 /* Junior_Design_Final_Deliverable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Junior_Design_Final_Deliverable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5ED86301FC313FD00D8A612 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5ED86351FC313FD00D8A612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,6 +98,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E5C39AB6206B3A4D000F8FE0 /* text_files */ = {
+			isa = PBXGroup;
+			children = (
+				E5C39ACD206B3A9C000F8FE0 /* Medications.txt */,
+				E5C39ACB206B3A97000F8FE0 /* Fall Prevention.txt */,
+				E5C39AC9206B3A92000F8FE0 /* Exercise.txt */,
+				E5C39AC7206B3A8C000F8FE0 /* Nutrition.txt */,
+				E5C39AC5206B3A87000F8FE0 /* Treating Osteoporosis.txt */,
+				E5C39AC3206B3A81000F8FE0 /* Diagnosing Osteoporosis.txt */,
+				E5C39AC1206B3A79000F8FE0 /* Risk Factors for Osteoporosis.txt */,
+				E5C39ABF206B3A75000F8FE0 /* Lifestyle.txt */,
+				E5C39ABD206B3A6F000F8FE0 /* Causes of Osteoporosis.txt */,
+				E5C39ABB206B3A68000F8FE0 /* Bone Basics.txt */,
+				E5C39AB9206B3A63000F8FE0 /* Who Has Osteoporosis?.txt */,
+				E5C39AB7206B3A5C000F8FE0 /* Defining Osteoporosis.txt */,
+			);
+			name = text_files;
+			sourceTree = "<group>";
+		};
 		E5ED86241FC313FD00D8A612 = {
 			isa = PBXGroup;
 			children = (
@@ -92,10 +139,13 @@
 			children = (
 				E5ED86301FC313FD00D8A612 /* AppDelegate.swift */,
 				E5ED86341FC313FD00D8A612 /* Main.storyboard */,
+				E5CF6032206B2A94000B06C0 /* ReadInfoViewController.swift */,
+				E5CF6030206B223A000B06C0 /* GeneralInformationViewController.swift */,
 				E5533AE31FCB586900F09C2F /* ViewSurveyRecordViewController.swift */,
 				E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */,
 				E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */,
 				E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */,
+				E5C39AB6206B3A4D000F8FE0 /* text_files */,
 				E5ED864D1FC344C300D8A612 /* Review_ResponsesViewController.swift */,
 				D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */,
 				D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */,
@@ -172,9 +222,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C39ABC206B3A68000F8FE0 /* Bone Basics.txt in Resources */,
+				E5C39AC4206B3A81000F8FE0 /* Diagnosing Osteoporosis.txt in Resources */,
+				E5C39AB8206B3A5C000F8FE0 /* Defining Osteoporosis.txt in Resources */,
+				E5C39AC8206B3A8C000F8FE0 /* Nutrition.txt in Resources */,
+				E5C39ACC206B3A97000F8FE0 /* Fall Prevention.txt in Resources */,
+				E5C39ABA206B3A63000F8FE0 /* Who Has Osteoporosis?.txt in Resources */,
+				E5C39AC2206B3A79000F8FE0 /* Risk Factors for Osteoporosis.txt in Resources */,
 				E5ED863E1FC313FD00D8A612 /* LaunchScreen.storyboard in Resources */,
+				E5C39ACA206B3A92000F8FE0 /* Exercise.txt in Resources */,
+				E5C39AC0206B3A75000F8FE0 /* Lifestyle.txt in Resources */,
+				E5C39ABE206B3A6F000F8FE0 /* Causes of Osteoporosis.txt in Resources */,
 				E5ED863B1FC313FD00D8A612 /* Assets.xcassets in Resources */,
 				E5ED86361FC313FD00D8A612 /* Main.storyboard in Resources */,
+				E5C39AC6206B3A87000F8FE0 /* Treating Osteoporosis.txt in Resources */,
+				E5C39ACE206B3A9C000F8FE0 /* Medications.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +251,7 @@
 				4F6200BE2033FD020004F7C4 /* TreatmentOptionsViewController.swift in Sources */,
 				E5ED86391FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld in Sources */,
 				E5ED86461FC3188E00D8A612 /* FirstLandingPageViewController.swift in Sources */,
+				E5CF6031206B223A000B06C0 /* GeneralInformationViewController.swift in Sources */,
 				E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */,
 				E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */,
 				D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */,
@@ -198,6 +261,7 @@
 				D91AAD0C20326BED0074A9DD /* MainScreenViewController.swift in Sources */,
 				E5ED86481FC326B400D8A612 /* First_SurveyViewController.swift in Sources */,
 				4F6200C22034207E0004F7C4 /* DetailOptionViewController.swift in Sources */,
+				E5CF6033206B2A94000B06C0 /* ReadInfoViewController.swift in Sources */,
 				E5ED86311FC313FD00D8A612 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
