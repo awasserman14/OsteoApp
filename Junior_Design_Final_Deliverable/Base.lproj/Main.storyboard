@@ -892,7 +892,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="General Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpH-eN-Twz">
-                                <rect key="frame" x="16" y="47" width="343" height="68"/>
+                                <rect key="frame" x="16" y="68" width="343" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="Idt-tg-G66"/>
                                     <constraint firstAttribute="height" constant="68" id="XoQ-9k-CdV"/>
@@ -908,12 +908,12 @@
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="infoCell" rowHeight="60" id="FYp-0M-blt">
                                         <rect key="frame" x="0.0" y="28" width="375" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="FYp-0M-blt" id="SBA-7S-JWO">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FYp-0M-blt" id="SBA-7S-JWO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPL-P8-hky">
-                                                    <rect key="frame" x="349" y="19" width="11" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPL-P8-hky">
+                                                    <rect key="frame" x="350" y="-31" width="11" height="121.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="VkX-0j-GeN"/>
                                                     </constraints>
@@ -925,7 +925,11 @@
                                             <constraints>
                                                 <constraint firstItem="hPL-P8-hky" firstAttribute="top" secondItem="SBA-7S-JWO" secondAttribute="topMargin" constant="11" id="0gE-Fs-HqP"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="hPL-P8-hky" secondAttribute="bottom" constant="11" id="Akl-RG-FoD"/>
+                                                <constraint firstItem="hPL-P8-hky" firstAttribute="top" secondItem="SBA-7S-JWO" secondAttribute="topMargin" constant="-42" id="BFM-8F-2LY"/>
+                                                <constraint firstItem="hPL-P8-hky" firstAttribute="centerY" secondItem="SBA-7S-JWO" secondAttribute="centerY" id="K4E-3X-bdv"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="hPL-P8-hky" secondAttribute="bottom" constant="39" id="cwc-gd-sP7"/>
                                                 <constraint firstItem="hPL-P8-hky" firstAttribute="trailing" secondItem="SBA-7S-JWO" secondAttribute="trailingMargin" id="kKd-zN-Hhe"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hPL-P8-hky" secondAttribute="trailing" constant="-1" id="nRb-Dn-UfP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -935,14 +939,46 @@
                                     <outlet property="delegate" destination="Ay8-is-Odb" id="mJv-Fs-8pV"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFf-kD-OUk">
+                                <rect key="frame" x="330" y="31" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="8zb-1U-8AR"/>
+                                </constraints>
+                                <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="EFf-kD-OUk" id="Hdm-bR-G5h">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kr8-xl-rfR">
+                                <rect key="frame" x="0.0" y="28" width="74" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4IW-BO-GJr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="a5d-Tr-dkE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="xLr-X7-RMu" kind="show" id="sGq-si-mog"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="UpH-eN-Twz" firstAttribute="centerX" secondItem="ugX-cA-VTN" secondAttribute="centerX" id="9Iq-A4-q2A"/>
+                            <constraint firstItem="kr8-xl-rfR" firstAttribute="leading" secondItem="x9Y-ur-tEU" secondAttribute="leading" id="9ll-FG-gIK"/>
+                            <constraint firstItem="UpH-eN-Twz" firstAttribute="top" secondItem="EFf-kD-OUk" secondAttribute="bottom" constant="2" id="K02-T5-C4I"/>
                             <constraint firstItem="d22-fa-s6l" firstAttribute="top" secondItem="x9Y-ur-tEU" secondAttribute="bottom" id="XcT-Zx-5A6"/>
-                            <constraint firstItem="x9Y-ur-tEU" firstAttribute="top" secondItem="UpH-eN-Twz" secondAttribute="bottom" constant="43" id="Xtv-6a-BeT"/>
-                            <constraint firstItem="UpH-eN-Twz" firstAttribute="top" secondItem="z5r-xO-lMf" secondAttribute="bottom" constant="27" id="hao-5D-hbK"/>
+                            <constraint firstItem="x9Y-ur-tEU" firstAttribute="top" secondItem="UpH-eN-Twz" secondAttribute="bottom" constant="22" id="Xtv-6a-BeT"/>
+                            <constraint firstItem="UpH-eN-Twz" firstAttribute="top" secondItem="z5r-xO-lMf" secondAttribute="bottom" constant="48" id="hao-5D-hbK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EFf-kD-OUk" secondAttribute="trailing" constant="-6" id="iMs-JQ-aZa"/>
+                            <constraint firstItem="kr8-xl-rfR" firstAttribute="top" secondItem="z5r-xO-lMf" secondAttribute="bottom" constant="8" symbolic="YES" id="mhF-s2-bT7"/>
                             <constraint firstAttribute="trailing" secondItem="x9Y-ur-tEU" secondAttribute="trailing" id="qlg-qg-JMK"/>
+                            <constraint firstItem="EFf-kD-OUk" firstAttribute="centerY" secondItem="kr8-xl-rfR" secondAttribute="centerY" id="rgm-n2-3iM"/>
                             <constraint firstItem="x9Y-ur-tEU" firstAttribute="leading" secondItem="ugX-cA-VTN" secondAttribute="leading" id="wih-C6-skb"/>
                         </constraints>
                     </view>
@@ -1919,9 +1955,9 @@
         <segue reference="NDX-zu-dqy"/>
         <segue reference="pQU-vw-cIg"/>
         <segue reference="5JX-o6-oPl"/>
-        <segue reference="OUB-dC-odZ"/>
+        <segue reference="Hdm-bR-G5h"/>
         <segue reference="9Ia-Xs-AUD"/>
         <segue reference="8xw-MN-jFj"/>
-        <segue reference="eMO-vt-stq"/>
+        <segue reference="sGq-si-mog"/>
     </inferredMetricsTieBreakers>
 </document>
