@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OsteoApp" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMD-YB-fkI">
-                                <rect key="frame" x="64" y="83" width="247" height="85"/>
+                                <rect key="frame" x="64" y="39" width="247" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="247" id="eke-Cd-NwU"/>
                                     <constraint firstAttribute="height" constant="85" id="hWt-9c-50z"/>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgs-en-1sa">
-                                <rect key="frame" x="87" y="352" width="200" height="200"/>
+                                <rect key="frame" x="87" y="308" width="200" height="200"/>
                                 <color key="backgroundColor" red="0.12941176470588237" green="0.2627450980392157" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="HFB-OC-Cad"/>
@@ -50,14 +50,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-8C-uMj">
-                                <rect key="frame" x="152" y="383" width="71" height="53"/>
+                                <rect key="frame" x="152" y="339" width="71" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="71" id="K92-8e-yUr"/>
                                     <constraint firstAttribute="height" constant="53" id="ajE-9r-h8W"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-HC-968">
-                                <rect key="frame" x="132" y="588" width="110" height="35"/>
+                                <rect key="frame" x="132" y="544" width="110" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="AvE-ui-Ygi"/>
                                     <constraint firstAttribute="width" constant="110" id="Oof-rV-66q"/>
@@ -70,7 +70,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OsteoApp uses this survey to provide" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DE-UP-la5">
-                                <rect key="frame" x="16" y="244" width="343" height="35"/>
+                                <rect key="frame" x="16" y="200" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="7Hw-1G-bV5"/>
                                     <constraint firstAttribute="width" constant="343" id="EaI-1h-pB9"/>
@@ -80,7 +80,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="you with personalized treatment options." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uac-re-hJM">
-                                <rect key="frame" x="16" y="287" width="343" height="35"/>
+                                <rect key="frame" x="16" y="243" width="343" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="B02-0t-6iK"/>
                                     <constraint firstAttribute="height" constant="35" id="EgL-9v-6pq"/>
@@ -90,7 +90,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Take Survey" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddX-tg-gaR">
-                                <rect key="frame" x="118" y="460" width="139" height="60"/>
+                                <rect key="frame" x="118" y="416" width="139" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="139" id="IDB-pg-Pxn"/>
                                     <constraint firstAttribute="height" constant="60" id="u3V-A1-ms3"/>
@@ -100,7 +100,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-ZW-NqQ">
-                                <rect key="frame" x="324" y="72" width="35" height="35"/>
+                                <rect key="frame" x="324" y="28" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="dt7-E7-2Mx"/>
                                     <constraint firstAttribute="height" constant="35" id="qyT-jF-xYz"/>
@@ -333,22 +333,27 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-Tx-iKg">
-                                <rect key="frame" x="16" y="162" width="343" height="26.5"/>
+                                <rect key="frame" x="16" y="206" width="343" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ2-IZ-jFF">
-                                <rect key="frame" x="324" y="41" width="35" height="35"/>
+                                <rect key="frame" x="324" y="85" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="Qll-qd-7Ek"/>
                                     <constraint firstAttribute="height" constant="35" id="tqx-Hs-8SU"/>
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="zZ2-IZ-jFF" id="gbF-8R-sIr">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeT-yF-vRu">
-                                <rect key="frame" x="121" y="84" width="133" height="36"/>
+                                <rect key="frame" x="123" y="128" width="129" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.16670405864715576" green="0.34069275856018066" blue="0.57210797071456909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -397,7 +402,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H3I-Zh-s11" id="ZkT-0H-rSB">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -408,7 +413,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFO-0o-ewM">
-                                <rect key="frame" x="16" y="21" width="63" height="36"/>
+                                <rect key="frame" x="16" y="21" width="61" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="&lt; Back">
                                     <color key="titleColor" red="0.16670405864715576" green="0.34069275856018066" blue="0.57210797071456909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -428,7 +433,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5MF-7g-Vd3" id="1yv-Fz-t3F">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -447,16 +452,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvm-TN-D4D">
-                                <rect key="frame" x="324" y="41" width="35" height="35"/>
+                                <rect key="frame" x="324" y="85" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="1h0-c9-fih"/>
                                     <constraint firstAttribute="height" constant="35" id="HDE-NN-Jjl"/>
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="cvm-TN-D4D" id="yFb-jO-ab2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Treatment Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfG-g8-x6h">
-                                <rect key="frame" x="60.5" y="84" width="254.5" height="37"/>
+                                <rect key="frame" x="65" y="128" width="246" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                 <color key="textColor" red="0.16670405864715576" green="0.34069275856018066" blue="0.57210797071456909" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -616,6 +626,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="Hnx-AE-sgQ" id="t7T-lP-XPD">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n8-Pn-cKc">
                                 <rect key="frame" x="0.0" y="207" width="375" height="92"/>
@@ -702,6 +717,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="ib5-6P-Mlb" id="VlN-2Y-mWs">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PN2-1C-Z8R">
                                 <rect key="frame" x="16" y="84" width="343" height="53"/>
@@ -876,6 +896,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="YAI-DA-2KF" id="2yz-Pd-osK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4hj-LT-zp1">
                                 <rect key="frame" x="0.0" y="217" width="375" height="450"/>
@@ -888,7 +913,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R21-Zf-74M" id="gm5-5H-nt6">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -899,7 +924,7 @@
                                 </connections>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQG-zf-CW6">
-                                <rect key="frame" x="0.0" y="69" width="74" height="40"/>
+                                <rect key="frame" x="0.0" y="25" width="74" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="iAy-ay-8Wn"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="yBm-HM-HQJ"/>
@@ -966,6 +991,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="Yue-sT-GAh" id="BNn-aN-rrD">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKt-cT-NqK">
                                 <rect key="frame" x="16" y="25" width="61" height="40"/>
@@ -1061,6 +1091,81 @@
             </objects>
             <point key="canvasLocation" x="3244" y="2110.794602698651"/>
         </scene>
+        <!--App Details View Controller-->
+        <scene sceneID="OK1-68-8aw">
+            <objects>
+                <viewController id="3gl-zz-nFf" customClass="AppDetailsViewController" customModule="Junior_Design_Final_Deliverable" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qB4-8P-4A5"/>
+                        <viewControllerLayoutGuide type="bottom" id="K3i-dG-JzG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="03U-mD-BRy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS2-d9-2wf">
+                                <rect key="frame" x="16" y="87" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="iNb-lQ-3Rd"/>
+                                    <constraint firstAttribute="height" constant="53" id="jgE-Q1-Zaf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All medical information in this app is from the Mayo Health Clinic." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5QC-cC-9Cz">
+                                <rect key="frame" x="16" y="167" width="343" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="acp-c8-aK1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This app calculates your treatment preferences based on....." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LtL-fh-bHO">
+                                <rect key="frame" x="16" y="347" width="343" height="145"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="145" id="oq6-re-Wjl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yy-z7-DN7">
+                                <rect key="frame" x="16" y="28" width="77" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="&lt; Back">
+                                    <color key="titleColor" red="0.12474207912423083" green="0.29890365708713268" blue="0.61757205310880825" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="surveyHelpDone:" destination="3gl-zz-nFf" eventType="touchUpInside" id="gTZ-hh-lzx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5QC-cC-9Cz" firstAttribute="trailing" secondItem="03U-mD-BRy" secondAttribute="trailingMargin" id="1Bl-7x-qU5"/>
+                            <constraint firstItem="JS2-d9-2wf" firstAttribute="leading" secondItem="03U-mD-BRy" secondAttribute="leadingMargin" id="92f-Bd-oqc"/>
+                            <constraint firstItem="LtL-fh-bHO" firstAttribute="trailing" secondItem="03U-mD-BRy" secondAttribute="trailingMargin" id="9fy-Ju-WTL"/>
+                            <constraint firstItem="LtL-fh-bHO" firstAttribute="trailing" secondItem="5QC-cC-9Cz" secondAttribute="trailing" id="C3h-lA-Iis"/>
+                            <constraint firstItem="LtL-fh-bHO" firstAttribute="leading" secondItem="03U-mD-BRy" secondAttribute="leadingMargin" id="HQh-Uy-fm4"/>
+                            <constraint firstItem="K3i-dG-JzG" firstAttribute="top" secondItem="JS2-d9-2wf" secondAttribute="bottom" constant="527" id="MKE-1w-84R"/>
+                            <constraint firstItem="K3i-dG-JzG" firstAttribute="top" secondItem="5QC-cC-9Cz" secondAttribute="bottom" constant="355" id="Shz-5J-BNx"/>
+                            <constraint firstItem="LtL-fh-bHO" firstAttribute="leading" secondItem="5QC-cC-9Cz" secondAttribute="leading" id="WsX-kN-NNC"/>
+                            <constraint firstItem="5QC-cC-9Cz" firstAttribute="leading" secondItem="03U-mD-BRy" secondAttribute="leadingMargin" id="a0c-rU-SlN"/>
+                            <constraint firstItem="JS2-d9-2wf" firstAttribute="trailing" secondItem="03U-mD-BRy" secondAttribute="trailingMargin" id="bjl-zm-nAV"/>
+                            <constraint firstItem="LtL-fh-bHO" firstAttribute="top" secondItem="5QC-cC-9Cz" secondAttribute="bottom" constant="35" id="cwI-n9-BcI"/>
+                            <constraint firstItem="JS2-d9-2wf" firstAttribute="top" secondItem="qB4-8P-4A5" secondAttribute="bottom" constant="67" id="lPe-bD-fnQ"/>
+                            <constraint firstItem="K3i-dG-JzG" firstAttribute="top" secondItem="LtL-fh-bHO" secondAttribute="bottom" constant="175" id="mfL-c6-GfJ"/>
+                            <constraint firstItem="5QC-cC-9Cz" firstAttribute="top" secondItem="JS2-d9-2wf" secondAttribute="bottom" constant="27" id="oAa-KV-bSR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ch4-Bi-iED" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1404" y="-801"/>
+        </scene>
         <!--First Survey View Controller-->
         <scene sceneID="yIR-Fi-cZ2">
             <objects>
@@ -1092,14 +1197,14 @@
                                 </subviews>
                             </stackView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="uRD-ET-OEa">
-                                <rect key="frame" x="16" y="72" width="343" height="10"/>
+                                <rect key="frame" x="16" y="28" width="343" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="10" id="Pxl-vY-Zjn"/>
                                 </constraints>
                                 <color key="progressTintColor" red="0.12941176469999999" green="0.26274509800000001" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-aM-Euv">
-                                <rect key="frame" x="16" y="90" width="74" height="40"/>
+                                <rect key="frame" x="16" y="46" width="74" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="L9A-At-s6l"/>
                                     <constraint firstAttribute="width" constant="74" id="PR7-fM-N3A"/>
@@ -1143,13 +1248,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsh-bn-zWC">
-                                <rect key="frame" x="306" y="89" width="35" height="35"/>
+                                <rect key="frame" x="306" y="45" width="35" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Yih-mI-d0k"/>
                                     <constraint firstAttribute="width" constant="35" id="h2E-Cu-KMl"/>
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" identifier="SurveyHelp" popoverAnchorView="Xsh-bn-zWC" id="OUB-dC-odZ">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="not important" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcW-6H-FhG">
                                 <rect key="frame" x="16" y="387" width="97" height="34"/>
@@ -1179,7 +1289,6 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How important is protection from hip fractures to you when making a decision about osteoporosis therapies?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gz-7x-jWM">
-                                <rect key="frame" x="30" y="133" width="311" height="126"/>
                                 <rect key="frame" x="30" y="89" width="311" height="126"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="126" id="Sg2-8V-PaP"/>
@@ -1287,7 +1396,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0o4-vr-OyA" id="VZM-5n-yGE">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="tintColor" red="0.0" green="0.10083072429999999" blue="0.2056316953" alpha="1" colorSpace="calibratedRGB"/>
@@ -1336,6 +1445,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="mir-T7-RMg" id="oAM-sd-kk2">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1510,6 +1624,11 @@
                                 </constraints>
                                 <color key="tintColor" red="0.00055467417270000003" green="0.21212742949999999" blue="0.44363249659999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="info"/>
+                                <connections>
+                                    <segue destination="3gl-zz-nFf" kind="popoverPresentation" popoverAnchorView="7rd-ZB-GwK" id="Tg4-jp-gsr">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Based on your survey responses we suggest" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bv-RX-XwG">
                                 <rect key="frame" x="16" y="123" width="343" height="30"/>
@@ -1542,7 +1661,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uQr-28-Ux7" id="KKJ-1v-qOp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -1652,11 +1771,12 @@
         <image name="white_clock" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yUb-oj-Tiz"/>
-        <segue reference="NDX-zu-dqy"/>
-        <segue reference="4rO-I1-55K"/>
-        <segue reference="VLZ-5d-YfZ"/>
-        <segue reference="9Ia-Xs-AUD"/>
-        <segue reference="gqE-zK-Xzs"/>
+        <segue reference="n7u-Cp-oPd"/>
+        <segue reference="RPy-2g-ekd"/>
+        <segue reference="79P-NK-UYh"/>
+        <segue reference="4YR-mx-QJf"/>
+        <segue reference="gbF-8R-sIr"/>
+        <segue reference="1U8-Dq-XhG"/>
+        <segue reference="ITy-Yp-A8V"/>
     </inferredMetricsTieBreakers>
 </document>

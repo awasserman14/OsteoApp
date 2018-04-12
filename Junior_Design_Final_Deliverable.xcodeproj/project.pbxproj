@@ -13,6 +13,7 @@
 		D91AAD0C20326BED0074A9DD /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAD0B20326BED0074A9DD /* MainScreenViewController.swift */; };
 		D91AAD0E203271AB0074A9DD /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */; };
 		D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */; };
+		D9D49C25207A9F7A001436B1 /* AppDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D49C24207A9F7A001436B1 /* AppDetailsViewController.swift */; };
 		E5533ADC1FC5E28000F09C2F /* Update_ResponsesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */; };
 		E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */; };
 		E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */; };
@@ -34,6 +35,7 @@
 		D91AAD0B20326BED0074A9DD /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		D91AAD0D203271AB0074A9DD /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		D93C4D91202D24A1005AB5B4 /* UserAccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountPageViewController.swift; sourceTree = "<group>"; };
+		D9D49C24207A9F7A001436B1 /* AppDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailsViewController.swift; sourceTree = "<group>"; };
 		E5533ADB1FC5E28000F09C2F /* Update_ResponsesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Update_ResponsesViewController.swift; sourceTree = "<group>"; };
 		E5533ADF1FC6191D00F09C2F /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		E5533AE11FCB3B5A00F09C2F /* SurveyHistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyHistoryViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				E5ED863C1FC313FD00D8A612 /* LaunchScreen.storyboard */,
 				E5ED863F1FC313FD00D8A612 /* Info.plist */,
 				E5ED86371FC313FD00D8A612 /* Junior_Design_Final_Deliverable.xcdatamodeld */,
+				D9D49C24207A9F7A001436B1 /* AppDetailsViewController.swift */,
 			);
 			path = Junior_Design_Final_Deliverable;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				E5533AE21FCB3B5A00F09C2F /* SurveyHistoryViewController.swift in Sources */,
 				D93C4D92202D24A1005AB5B4 /* UserAccountPageViewController.swift in Sources */,
 				E5533AE41FCB586900F09C2F /* ViewSurveyRecordViewController.swift in Sources */,
+				D9D49C25207A9F7A001436B1 /* AppDetailsViewController.swift in Sources */,
 				E5ED864E1FC344C300D8A612 /* Review_ResponsesViewController.swift in Sources */,
 				E5533AE01FC6191D00F09C2F /* ResultsViewController.swift in Sources */,
 				D91AAD0C20326BED0074A9DD /* MainScreenViewController.swift in Sources */,
