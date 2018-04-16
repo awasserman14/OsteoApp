@@ -10,9 +10,9 @@ import UIKit
 import CoreData
 
 class TreatmentOptionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    let mostOne: [String] = ["Boniva prescription"]
-    let treatmentList: [String] = ["Reclast Infusion", "Kyphoplasty Surgery"]
+    var taken = false
+    var mostOne: [String] = ["Boniva prescription"]
+    var treatmentList: [String] = ["Reclast Infusion", "Kyphoplasty Surgery"]
     //var mostOne = [String]()
     var treatment: String?
     @IBOutlet weak var mostOneTable: UITableView!
@@ -24,6 +24,10 @@ class TreatmentOptionsViewController: UIViewController, UITableViewDelegate, UIT
         
         //setList()
         //splitList()
+        if !self.taken {
+            mostOne = []
+            treatmentList = []
+        }
         
         mostOneTable.dataSource = self
         mostOneTable.delegate = self
@@ -68,26 +72,32 @@ class TreatmentOptionsViewController: UIViewController, UITableViewDelegate, UIT
         
         if tableView == self.restTable {
             cell = self.restTable.dequeueReusableCell(withIdentifier: "cell1", for: indexPath)
-            cell!.textLabel!.text = treatmentList[indexPath.row]
+            if taken {
+                cell!.textLabel!.text = treatmentList[indexPath.row]
+            }
         }
         if tableView == self.mostOneTable {
             cell = self.mostOneTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-            cell!.textLabel!.text = mostOne[0]
+            if taken {
+                cell!.textLabel!.text = mostOne[0]
+            }
         }
         //let cell = self.cellTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if tableView == self.mostOneTable {
-            tableView.deselectRow(at: indexPath, animated: true)
-            treatment = mostOne[0]
-            performSegue(withIdentifier: "moveToDetail", sender: self)
-        }
-        if tableView == self.restTable {
-            tableView.deselectRow(at: indexPath, animated: true)
-            treatment = treatmentList[indexPath.row]
-            performSegue(withIdentifier: "moveToDetail", sender: self)
+        if self.taken {
+            if tableView == self.mostOneTable {
+                tableView.deselectRow(at: indexPath, animated: true)
+                treatment = mostOne[0]
+                performSegue(withIdentifier: "moveToDetail", sender: self)
+            }
+            if tableView == self.restTable {
+                tableView.deselectRow(at: indexPath, animated: true)
+                treatment = treatmentList[indexPath.row]
+                performSegue(withIdentifier: "moveToDetail", sender: self)
+            }
         }
     }
 
@@ -98,6 +108,7 @@ class TreatmentOptionsViewController: UIViewController, UITableViewDelegate, UIT
                 destination.others = self.treatmentList
                 destination.treatName = self.treatment
                 destination.mostOne = self.mostOne
+                destination.taken = self.taken
             }
         }
     }

@@ -26,6 +26,7 @@ class MainScreenViewController: UIViewController {
     var email : String?=nil
     var age : String?=nil
     var gender : String?=nil
+    var skipped = false
     
     var records: [NSManagedObject] = []
     
@@ -77,10 +78,21 @@ class MainScreenViewController: UIViewController {
         
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier=="goTreatmentOptions"){
+            let navVC = segue.destination as? UINavigationController
+            
+            let vc = navVC?.viewControllers.first as! TreatmentOptionsViewController
+            
+            if !skipped {
+                vc.taken = true
+            }
+        }
     }
 
 }

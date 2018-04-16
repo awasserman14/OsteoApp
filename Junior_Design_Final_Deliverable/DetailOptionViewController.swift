@@ -16,6 +16,7 @@ class DetailOptionViewController: UIViewController {
     var others: [String]?
     var mostOne: [String]?
     var treatName: String?
+    var taken = true
     
 
     override func viewDidLoad() {
@@ -34,15 +35,16 @@ class DetailOptionViewController: UIViewController {
     /*@IBOutlet weak var goBack: UIButton!
     @IBAction func goBack(_ sender: Any) {
         self.performSegue(withIdentifier: "goBack", sender: self)
-    }
+    } */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "goBack") {
-            if let destination = segue.destination as? TreatmentOptionsViewController {
-                destination.treatmentList = self.others!
-                destination.mostOne = self.mostOne!
-            }
+        if (segue.identifier == "backToTreat") {
+            let navVC = segue.destination as? UINavigationController
+            
+            let vc = navVC?.viewControllers.first as! TreatmentOptionsViewController
+            
+            vc.taken = self.taken
         }
-    }*/
+    }
 
     /*
     // MARK: - Navigation
