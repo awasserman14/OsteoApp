@@ -20,7 +20,7 @@ class Review_ResponsesViewController: UIViewController, UITableViewDelegate, UIT
     var full_questions: [String]?
     
     //array containing keywords for each question
-    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Other Positive Factors: ", "5. Risk of breast cancer importance: ", "6. Risk of blood clots importance: ", "7. Risk of gastro-intestinal side-effects: ", "8. Other Negative Factors: "]
+    var questions : [String] = ["1. Hip Fracture importance: ", "2. Spinal Fracture importance: ", "3. Activity importance: ", "4. Pain Reduction Importance: ", "5. Risk of Breast Cancer importance: ", "6. Risk of Blood Clots Importance: ", "7. Risk of Gastro-Intestinal Side-Effects: ", "8. Medication Risk Importance: "]
     
     //array of the inputted answers by the user
     var answers : [Int]?

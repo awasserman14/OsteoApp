@@ -10,6 +10,20 @@ import UIKit
 import CoreData
 
 class CreateAccountViewController: UIViewController {
+    
+    // This is used to dismiss the keyboard, user just has to tap outside the
+    // user name and password views and it will dismiss
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if touch.phase == UITouchPhase.began {
+                view.endEditing(true)
+            }
+        }
+        
+        super.touchesBegan(touches , with:event)
+    }
+
+    var responses : [String]?
 
     
     
@@ -52,10 +66,10 @@ class CreateAccountViewController: UIViewController {
         
         let record = NSManagedObject(entity: entity, insertInto: managedContext)
         
-        record.setValue(String(describing: nameField.text!), forKeyPath: "name")
-        record.setValue(String(describing: ageField.text!), forKeyPath: "age")
-        record.setValue(String(describing: emailField.text!), forKeyPath: "email")
-        record.setValue(String(describing: genderField.text!), forKeyPath: "gender")
+        record.setValue(String(nameField.text!), forKeyPath: "name")
+        record.setValue(String(ageField.text!), forKeyPath: "age")
+        record.setValue(String(emailField.text!), forKeyPath: "email")
+        record.setValue(String(genderField.text!), forKeyPath: "gender")
 
         do {
             try managedContext?.save()

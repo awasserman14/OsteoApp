@@ -11,14 +11,32 @@ import CoreData
 
 class UserAccountPageViewController: UIViewController {
     
+    
+    @IBOutlet var nameField: UITextField!
+    
+    @IBOutlet var ageField: UITextField!
+    
+    @IBOutlet var genderField: UITextField!
+    @IBOutlet var emailField: UITextField!
+    
+    // This is used to dismiss the keyboard, user just has to tap outside the
+    // user name and password views and it will dismiss
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if touch.phase == UITouchPhase.began {
+                view.endEditing(true)
+            }
+        }
+        
+        super.touchesBegan(touches , with:event)
+    }
+
+    
     var records: [NSManagedObject] = []
     
     var currentRecord: NSManagedObject?
     
-    @IBOutlet weak var genderField: UITextField!
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var ageField: UITextField!
-    @IBOutlet weak var nameField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,16 +70,28 @@ class UserAccountPageViewController: UIViewController {
         } catch let error as NSError {
             print("could not fetch")
         }
+        print("records.count")
+        print(records.count)
         
         if (records.count != 0) {
-            
-            nameField.text! = ((records[0].value(forKeyPath: "name")! as! String) as! String)
-            nameField!.text! = nameField!.text!
-            genderField.text = (records[0].value(forKeyPath: "gender") as! String)
-            emailField.text! = (records[0].value(forKeyPath: "email")! as! String) as! String
-            ageField.text! = (records[0].value(forKeyPath: "age")! as! String) as! String
+            currentRecord = records[0]
 
+            print(currentRecord)
+
+            let name = currentRecord?.value(forKeyPath: "name") as! String
             
+            //nameField!.text! = nameField!.text!
+            let gender = currentRecord?.value(forKeyPath: "gender") as! String
+            let email = currentRecord?.value(forKeyPath: "email") as! String
+            let age = currentRecord?.value(forKeyPath: "age") as! String
+           
+            
+            nameField.text = name;
+            emailField.text = email
+            genderField.text = gender;
+            ageField.text = age
+
+
         }
         
         

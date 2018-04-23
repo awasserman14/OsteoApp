@@ -40,6 +40,7 @@ class GeneralInformationViewController: UIViewController, UITableViewDelegate, U
         let cell = self.infoTable.dequeueReusableCell(withIdentifier: "infoCell", for: indexPath)
         
         cell.textLabel!.text = headers[indexPath.row]
+        
 
         return cell
     }
