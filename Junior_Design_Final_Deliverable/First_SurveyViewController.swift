@@ -24,17 +24,19 @@ class First_SurveyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // this is the old question 4, doesnt make sense in our UI
+        //What other positive factors are inportant to you when making a decision about osteoporosis therapies?
         
         /*Here, Load the array of questions with
          all questions that will be asked in the survey*/
         questions[1] = "How important is protection from hip fractures to you when making a decision about osteoporosis therapies?"
         questions[2] = "How important is protection from spinal fractures to you when making a decision about osteoporosis therapies?"
         questions[3] = "How important is the ability to stay active to you when making a decision about osteoporosis therapies?"
-        questions[4] = "What other positive factors are inportant to you when making a decision about osteoporosis therapies?"
+        questions[4] = "How important is reducing pain when making decisions about osteoporosis therapies?"
         questions[5] = "How important is the risk of breast cancer to you when making a decision about osteoporosis therapies?"
         questions[6] = "How important is the risk of blood clots to you when making a decision about osteoporosis therapies?"
         questions[7] = "How important is the risk of gastro-intestinal side effects (such as ulcer) to you when making a decision about osteoporosis therapies?"
-        questions[8] = "What other negative factors are important to you when making a decision about osteoporosis therapies? (Please specify and negative factors you have considered and rate their importance to you)"
+        questions[8] = "How important is the risk of side effects from prescripton medications when making a decision about osteoporosis therapies?"
         
         if question_number == 0 || question_number==nil {
             question_number = 1

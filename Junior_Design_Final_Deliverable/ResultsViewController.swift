@@ -55,8 +55,8 @@ class ResultsViewController: UIViewController, UITableViewDelegate, UITableViewD
         let mailComposerVC = MFMailComposeViewController()
         mailComposerVC.mailComposeDelegate = self
         
-        mailComposerVC.setSubject("My OsteoApp Results")
-        mailComposerVC.setMessageBody("An OsteoApp user would like to share their treatment reccomendations with you. Please find them below. 1. Boniva prescription 2. Reclast Infusion 3. Kyphoplasty Surgery", isHTML: false)
+        mailComposerVC.setSubject("My PDAssist Results")
+        mailComposerVC.setMessageBody("A PDAssist user would like to share their treatment reccomendations with you. Please find them below. 1. Boniva prescription 2. Reclast Infusion 3. Kyphoplasty Surgery", isHTML: false)
         return mailComposerVC
     }
     
